@@ -1,0 +1,18 @@
+{
+	"caret_style": "phase",
+	"color_scheme": "Packages/Dayle Rees Color Schemes/sublime/slime.tmTheme",
+	"ensure_newline_at_eof_on_save": true,
+	"findreplace_small": true,
+	"font_face": "Source Code Pro",
+	"font_size": 10,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"line_padding_bottom": 4,
+	"line_padding_top": 4,
+	"show_panel_on_build": false,
+	"tabs_medium": true,
+	"theme": "slime.sublime-theme",
+	"trim_trailing_white_space_on_save": true
+}
