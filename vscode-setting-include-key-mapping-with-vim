@@ -2,7 +2,7 @@
   "workbench.startupEditor": "newUntitledFile",
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "all",
-  "workbench.colorTheme": "Slime",
+  "workbench.colorTheme": "Material Theme Darker",
   "[php]": {
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
   },
@@ -26,10 +26,13 @@
     ]
   },
   "workbench.statusBar.visible": true,
+  // VimVsCode configuration
   "vim.incsearch": true,
   "vim.useCtrlKeys": false,
+  "vim.searchHighlightColor": "rgba(182, 196, 120, 0.5)",
   "vim.hlsearch": true,
   "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "rgba(182, 196, 120, 0.5)",
   "vim.insertModeKeyBindings": [
     {
       "before": [
@@ -87,7 +90,7 @@
     },
   ],
   "vim.leader": ",",
-  "editor.lineHeight": 30,
+  "editor.lineHeight": 24,
   "breadcrumbs.enabled": false,
   "window.menuBarVisibility": "default",
   "workbench.activityBar.visible": false,
@@ -97,5 +100,9 @@
   "php-cs-fixer.executablePath": "${extensionPath}\\php-cs-fixer.phar",
   "php-cs-fixer.lastDownload": 1588645434308,
   "files.trimTrailingWhitespace": true,
-  "editor.fontFamily": "Hack",
+  "editor.fontFamily": "Roboto Mono",
+  // Enables font ligatures
+  "editor.fontLigatures": true,
+  // Controls if file decorations should use badges.
+  "explorer.decorations.badges": false
 }
