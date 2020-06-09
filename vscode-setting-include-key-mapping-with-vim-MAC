@@ -96,5 +96,6 @@
   "vim.easymotionMarkerWidthPerChar": 8,
   "vim.easymotionMarkerHeight": 20,
   "vim.easymotionMarkerYOffset": 4, 
-  "editor.fontFamily": "Roboto Mono, Menlo, Monaco, 'Courier New', monospace"
+  "editor.fontFamily": "Roboto Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.renderWhitespace": "all",
 }
