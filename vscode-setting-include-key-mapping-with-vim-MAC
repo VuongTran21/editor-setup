@@ -1,0 +1,100 @@
+{
+  "markdown.preview.lineHeight": 1.4,
+  "window.zoomLevel": 0,
+  "editor.quickSuggestionsDelay": 15,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.colorTheme": "Material Theme",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "workbench.editor.highlightModifiedTabs": true,
+  "editor.minimap.enabled": false,
+  "editor.lineHeight": 24,
+  "explorer.openEditors.visible": 0,
+  "workbench.activityBar.visible": false,
+  "workbench.statusBar.visible": true,
+  "editor.tabCompletion": "on",
+  "editor.lineNumbers": "relative",
+  "[php]": {
+      "editor.defaultFormatter": "junstyle.php-cs-fixer"
+  },
+  "window.openFilesInNewWindow": "on",
+  "importCost.typescriptExtensions": [
+      "\\.vue$"
+  ],
+  "breadcrumbs.enabled": false,
+  // VimVsCode configuration
+  "vim.incsearch": true,
+  "vim.useCtrlKeys": false,
+  "vim.searchHighlightColor": "rgba(182, 196, 120, 0.5)",
+  "vim.hlsearch": true,
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "rgba(182, 196, 120, 0.5)",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "<space>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    },
+    {
+      "before": [" "],
+      "after": ["<leader>", "<leader>", "<leader>", "b", "d", "w"]
+    },
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    },
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    },
+  ],
+  "vim.leader": ",",
+  "vim.easymotion": true,
+  "vim.easymotionMarkerFontFamily": "Roboto Mono",
+  "vim.easymotionMarkerFontSize": "14",
+  "vim.easymotionMarkerWidthPerChar": 8,
+  "vim.easymotionMarkerHeight": 20,
+  "vim.easymotionMarkerYOffset": 4, 
+  "editor.fontFamily": "Roboto Mono, Menlo, Monaco, 'Courier New', monospace"
+}
