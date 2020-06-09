@@ -2,17 +2,17 @@
   "workbench.startupEditor": "newUntitledFile",
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "all",
-  "workbench.colorTheme": "Material Theme Darker",
-  "[php]": {
-    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
-  },
-  "editor.detectIndentation": false,
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
+  "workbench.colorTheme": "Material Theme",
+  // "[php]": {
+  //   "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  // },
+  // "editor.detectIndentation": false,
+  // "[html]": {
+  //   "editor.defaultFormatter": "vscode.html-language-features"
+  // },
+  // "[javascript]": {
+  //   "editor.defaultFormatter": "vscode.typescript-language-features"
+  // },
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "editor.tokenColorCustomizations": {
@@ -25,6 +25,7 @@
       }
     ]
   },
+  "editor.lineNumbers": "relative",
   "workbench.statusBar.visible": true,
   // VimVsCode configuration
   "vim.incsearch": true,
@@ -53,6 +54,10 @@
       "commands": [
         ":nohl"
       ]
+    },
+    {
+      "before": [" "],
+      "after": ["<leader>", "<leader>", "<leader>", "b", "d", "w"]
     },
     {
       "before": [
@@ -90,8 +95,14 @@
     },
   ],
   "vim.leader": ",",
+  "vim.easymotion": true,
+  "vim.easymotionMarkerFontFamily": "Roboto Mono",
+  "vim.easymotionMarkerFontSize": "14",
+  "vim.easymotionMarkerWidthPerChar": 8,
+  "vim.easymotionMarkerHeight": 20,
+  "vim.easymotionMarkerYOffset": 4,
   "editor.lineHeight": 24,
-  "breadcrumbs.enabled": false,
+  "breadcrumbs.enabled": true,
   "window.menuBarVisibility": "default",
   "workbench.activityBar.visible": false,
   "explorer.openEditors.visible": 0,
