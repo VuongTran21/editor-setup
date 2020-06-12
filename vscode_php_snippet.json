@@ -1,0 +1,32 @@
+{
+  "Create public method": {
+    "prefix": "met",
+    "body": [
+      "public function ${1}()\r",
+      "{\r",
+      "    ${2}\r",
+      "}"
+    ],
+    "description": "Create public function"
+  },
+  "Create protected method": {
+    "prefix": "pmet",
+    "body": [
+      "protected function ${1}()\r",
+      "{\r",
+      "    ${2}\r",
+      "}"
+    ],
+    "description": "Create protected function"
+  },
+  "Create private method": {
+    "prefix": "prmet",
+    "body": [
+      "private function ${1}()\r",
+      "{\r",
+      "    ${2}\r",
+      "}"
+    ],
+    "description": "Create private function"
+  }
+}
