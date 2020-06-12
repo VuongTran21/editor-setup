@@ -3,9 +3,9 @@
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "all",
   "workbench.colorTheme": "Material Theme",
-  // "[php]": {
-  //   "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
-  // },
+  "[php]": {
+    "editor.defaultFormatter": "junstyle.php-cs-fixer"
+  },
   // "editor.detectIndentation": false,
   // "[html]": {
   //   "editor.defaultFormatter": "vscode.html-language-features"
@@ -110,10 +110,13 @@
   "editor.fontSize": 12,
   "php-cs-fixer.executablePath": "${extensionPath}\\php-cs-fixer.phar",
   "php-cs-fixer.lastDownload": 1588645434308,
+  "php-cs-fixer.config": "C:\\Users\\Vuong Tran\\.phpcsfixer",
+  // "php-cs-fixer.formatHtml": true,
   "files.trimTrailingWhitespace": true,
   "editor.fontFamily": "Roboto Mono",
   // Enables font ligatures
   "editor.fontLigatures": true,
   // Controls if file decorations should use badges.
-  "explorer.decorations.badges": false
+  "explorer.decorations.badges": false,
+  "workbench.iconTheme": "eq-material-theme-icons",
 }
