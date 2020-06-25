@@ -1,20 +1,27 @@
 {
-	"caret_style": "phase",
-	"close_windows_when_empty": true,
-	"color_scheme": "Packages/Dayle Rees Color Schemes/sublime/slime.tmTheme",
-	"ensure_newline_at_eof_on_save": true,
-	"font_face": "Roboto Mono",
-	"font_size": 12,
-	"hot_exit": false,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
-	"line_padding_bottom": 6,
-	"line_padding_top": 6,
-	"save_on_focus_lost": true,
-	"scroll_past_end": true,
-	"theme": "Spacegray Eighties.sublime-theme",
-	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true
+    "caret_style": "phase",
+    "close_windows_when_empty": true,
+    "color_scheme": "Packages/Dayle Rees Color Schemes/sublime/rainbow.tmTheme",
+    "draw_white_space": "all",
+    "ensure_newline_at_eof_on_save": true,
+    "font_face": "Roboto Mono",
+    "font_size": 12,
+    "highlightedyank": true,
+    "highlightedyank_duration": 200,
+    "hot_exit": false,
+    "ignored_packages":
+    [
+        "Six",
+        "Vintage",
+        "Vintageous"
+    ],
+    "line_padding_bottom": 6,
+    "line_padding_top": 6,
+    "neovintageous_build_version": 11100,
+    "save_on_focus_lost": true,
+    "scroll_past_end": true,
+    "theme": "Material-Theme.sublime-theme",
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true,
+    "vintageous_use_sys_clipboard": true
 }
