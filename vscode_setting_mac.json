@@ -1,27 +1,38 @@
 {
-  "markdown.preview.lineHeight": 1.4,
   "window.zoomLevel": 0,
+  "window.openFilesInNewWindow": "on",
+  "files.trimTrailingWhitespace": true,
+	"files.insertFinalNewline": true,
+
+  "explorer.openEditors.visible": 0,
+
+  "workbench.colorTheme": "Material Theme",
+  "workbench.activityBar.visible": false,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.statusBar.visible": true,
+  "workbench.iconTheme": "eq-material-theme-icons",
+
+  "markdown.preview.lineHeight": 1.4,
+
   "editor.quickSuggestionsDelay": 15,
   "explorer.confirmDragAndDrop": false,
-  "workbench.colorTheme": "Material Theme",
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
-  "workbench.editor.highlightModifiedTabs": true,
   "editor.minimap.enabled": false,
   "editor.lineHeight": 24,
-  "explorer.openEditors.visible": 0,
-  "workbench.activityBar.visible": false,
-  "workbench.statusBar.visible": true,
   "editor.tabCompletion": "on",
   "editor.lineNumbers": "relative",
+  "editor.fontFamily": "Roboto Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.renderWhitespace": "all",
+
   "[php]": {
       "editor.defaultFormatter": "junstyle.php-cs-fixer"
   },
-  "window.openFilesInNewWindow": "on",
   "importCost.typescriptExtensions": [
       "\\.vue$"
   ],
   "breadcrumbs.enabled": false,
+
   // VimVsCode configuration
   "vim.incsearch": true,
   "vim.useCtrlKeys": false,
@@ -29,6 +40,7 @@
   "vim.hlsearch": true,
   "vim.highlightedyank.enable": true,
   "vim.highlightedyank.color": "rgba(182, 196, 120, 0.5)",
+  "vim.useSystemClipboard": true,
   "vim.insertModeKeyBindings": [
     {
       "before": [
@@ -95,7 +107,14 @@
   "vim.easymotionMarkerFontSize": "14",
   "vim.easymotionMarkerWidthPerChar": 8,
   "vim.easymotionMarkerHeight": 20,
-  "vim.easymotionMarkerYOffset": 4, 
-  "editor.fontFamily": "Roboto Mono, Menlo, Monaco, 'Courier New', monospace",
-  "editor.renderWhitespace": "all",
+  "vim.easymotionMarkerYOffset": 4,
+  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+  "php-cs-fixer.lastDownload": 1591970597700,
+  "php-cs-fixer.config": "/Users/vuongtran/.phpcsfixer",
+  "editor.renameOnType": true,
+
+  // end vim configuration
+
+
+  // prettier setting
 }
