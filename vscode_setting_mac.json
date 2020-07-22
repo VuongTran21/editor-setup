@@ -6,9 +6,7 @@
 
   "explorer.openEditors.visible": 0,
 
-  "workbench.colorTheme": "Material Theme",
-  "workbench.activityBar.visible": false,
-  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.colorTheme": "Peacocks In Space",
   "workbench.statusBar.visible": true,
   "workbench.iconTheme": "eq-material-theme-icons",
 
@@ -40,6 +38,7 @@
   "vim.hlsearch": true,
   "vim.highlightedyank.enable": true,
   "vim.highlightedyank.color": "rgba(182, 196, 120, 0.5)",
+  "vim.highlightedyank.duration": 100,
   "vim.useSystemClipboard": true,
   "vim.insertModeKeyBindings": [
     {
@@ -103,15 +102,27 @@
   ],
   "vim.leader": ",",
   "vim.easymotion": true,
-  "vim.easymotionMarkerFontFamily": "Roboto Mono",
-  "vim.easymotionMarkerFontSize": "14",
+  // "vim.easymotionMarkerFontFamily": "Roboto Mono",
+  // "vim.easymotionMarkerFontSize": "14",
   "vim.easymotionMarkerWidthPerChar": 8,
-  "vim.easymotionMarkerHeight": 20,
-  "vim.easymotionMarkerYOffset": 4,
+  "vim.easymotionMarkerBackgroundColor": "red",
+  // "vim.easymotionMarkerHeight": 20,
+  // "vim.easymotionMarkerYOffset": 4,
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-  "php-cs-fixer.lastDownload": 1591970597700,
+  "php-cs-fixer.lastDownload": 1594304395723,
   "php-cs-fixer.config": "/Users/vuongtran/.phpcsfixer",
   "editor.renameOnType": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.activityBar.visible": false,
+  "workbench.editor.showTabs": true,
+  // custom bar
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#333",
+    "statusBar.foreground": "#fff",
+    "statusBar.noFolderBackground": "#333",
+    "statusBar.noFolderForeground": "#fff"
+}
+  // end custom bar
 
   // end vim configuration
 
