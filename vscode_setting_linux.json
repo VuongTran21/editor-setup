@@ -1,0 +1,88 @@
+{
+  "workbench.startupEditor": "newUntitledFile",
+  "files.insertFinalNewline": true,
+  "editor.minimap.enabled": false,
+	"editor.cursorBlinking": "phase",
+  "editor.renderWhitespace": "all",
+  "workbench.colorTheme": "Peacocks In Space (rainglow)",
+  "[php]": {
+    "editor.defaultFormatter": "junstyle.php-cs-fixer",
+    "editor.tabSize": 4
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.tabSize": 2
+  },
+  "editor.wordWrap": "on",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment, comment.block.html",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  "editor.lineNumbers": "relative",
+  "workbench.statusBar.visible": true,
+
+  // VimVsCode configuration
+  "vim.incsearch": true,
+  "vim.useCtrlKeys": false,
+  "vim.searchHighlightColor": "rgba(182, 196, 120, 0.5)",
+  "vim.hlsearch": true,
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "rgba(182, 196, 120, 0.5)",
+  "vim.highlightedyank.duration": 100,
+  "vim.useSystemClipboard": true,
+  "vim.insertModeKeyBindings": [
+    //
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "<space>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    },
+    {
+      "before": [" "],
+      "after": ["<leader>", "<leader>", "<leader>", "b", "d", "w"]
+    },
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    //
+  ],
+  "vim.leader": ",",
+  "vim.easymotion": true,
+  "vim.easymotionMarkerBackgroundColor": "red",
+  "vim.easymotionMarkerWidthPerChar": 12,
+  "breadcrumbs.enabled": true,
+  "window.menuBarVisibility": "default",
+  "workbench.activityBar.visible": false,
+  "explorer.openEditors.visible": 0,
+  "window.zoomLevel": -1,
+  "editor.fontSize": 14,
+  "php-cs-fixer.executablePath": "${extensionPath}\\php-cs-fixer.phar",
+  "php-cs-fixer.lastDownload": 1588645434308,
+  "php-cs-fixer.config": "C:\\Users\\Vuong Tran\\.phpcsfixer",
+  "files.trimTrailingWhitespace": true,
+  "editor.fontFamily": "Roboto Mono",
+  "explorer.decorations.badges": false,
+  "intelephense.diagnostics.undefinedMethods": true,
+  "intelephense.diagnostics.undefinedVariables": true,
+  "editor.lineHeight": 32,
+  "editor.tabSize": 2,
+  "sync.gist": "a04c663db5c83114d0dc8610d27924d9",
+  "keyboard.dispatch": "keyCode",
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true,
+    "**/storage": true,
+  },
+}
