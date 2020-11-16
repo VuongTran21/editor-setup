@@ -2,16 +2,18 @@ syntax enable
 set backspace=indent,eol,start                                                  "Make backspace behave like every other editor.
 let mapleader = ','								"The default leader is \, but a  comma is much better.
 set number									"Let's activate line numbers.
-
-
-
-
-
+set relativenumber
+set mouse=a
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set clipboard+=unnamed
 "---------------Visuals-----------------"
-colorscheme atom-dark
+" colorscheme atom-dark
 
 set t_CO=256									"Use 256 colors. This is useful for Terminal Vim.
-set guifont=Fira_Code:h17
+"set guifont=Fira_Code:h17
 set linespace=15								"Macvim-specific line-height.
 
 set guioptions-=l
@@ -31,8 +33,10 @@ set hlsearch
 set incsearch
 
 
-
-
+"----------------Register-----------------------"
+:inoremap <C-v> <ESC>"+pa
+:noremap <C-v> <ESC>"+pa
+:vnoremap <C-c> "+y
 
 "---------------Split Management-----------------"
 set splitbelow
@@ -45,23 +49,3 @@ nmap <C-L> <C-W><C-L>
 
 
 
-
-
-
-"---------------Mappings-----------------"
-"Make it easy to edit the Vimrc file.
-nmap <Leader>ev :tabedit $MYVIMRC<cr>
-
-"Add simple highlight removal.
-nmap <Leader><space> :nohlsearch<cr>
-
-
-
-
-
-"---------------Auto-Command-----------------"
-"Automatically source the Vimrc file on save.
-augroup autosourcing								"Autocmd will run every single time + 1, use augroup to prevent it.
-	autocmd!
-	autocmd BufWritePost .vimrc source %
-augroup END
