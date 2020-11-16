@@ -49,3 +49,23 @@ nmap <C-L> <C-W><C-L>
 
 
 
+
+
+
+"---------------Mappings-----------------"
+"Make it easy to edit the Vimrc file.
+nmap <Leader>ev :tabedit $MYVIMRC<cr>
+
+"Add simple highlight removal.
+nmap <Leader><space> :nohlsearch<cr>
+
+
+
+
+
+"---------------Auto-Command-----------------"
+"Automatically source the Vimrc file on save.
+augroup autosourcing								"Autocmd will run every single time + 1, use augroup to prevent it.
+	autocmd!
+	autocmd BufWritePost .vimrc source %
+augroup END
