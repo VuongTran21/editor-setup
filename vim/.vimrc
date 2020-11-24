@@ -13,11 +13,23 @@ set number
 " Disable bell sound!!!!
 set noerrorbells visualbell t_vb=
 
+" Automatically save file when change buffer
+" set autowriteall
+
+" Set autocompletion to current, window, buffer, and unload buffer
+set complete=.,w,b,u
+
 " Search all text in lower case
 set ignorecase
 
 " Linespace only work for GUI like macvim for Gvim
 set linespace=15
+
+" Tabstop
+set tabstop=4
+set expandtab
+set softtabstop=4
+set shiftwidth=4
 
 let mapleader=','
 
@@ -77,6 +89,20 @@ set grepprg=ag
 
 let g:grep_cmd_opts = '--line-numbers --noheading'
 
+"/ PHP Document for VIM
+let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
+nmap <buffer> <Leader>d :call pdv#DocumentWithSnip()<CR>
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+"/ vim-php-cs-fixer.vim
+let g:php_cs_fixer_path="/home/vuongtran/.config/composer/vendor/bin/php-cs-fixer"
+let g:php_cs_fixer_config_file = "/home/vuongtran/.phpcsfixer"
+let g:php_cs_fixer_rules = "@PSR2"
+let g:php_cs_fixer_php_path = "/usr/bin/php"
+nnoremap <slient><Leader>pf :call PhpCsFixerFixFile()<cr>
+
 "---------------Mappings---------------"
 
 " Edit vimrc file
@@ -92,10 +118,10 @@ nmap <C-b> :NERDTreeToggle<cr>
 nmap <Leader>f :tag<space>
 
 " Close all buffers
-nmap <Leader>ww :bufdo bd!<cr>
+nmap <Leader>w :bufdo bd!<cr>
 
 " Close single tab
-nmap <Leader>w :tabc<cr>
+nmap <C-w> :tabc<cr>
 
 " Paste from system clipboard
 nmap <Leader>v "+p
@@ -137,3 +163,5 @@ autocmd FileType php noremap <Leader>nf :call PhpExpandClass()<CR>
 " - Ctrl + ] to go to defination
 " - Ctrl + w + | to expand full screen of current split where the pointer is
 " - Ctrl + w + = to equally split screen
+" - :sbuffer <buffer-index>: open buffer in spit window
+" - Ctrl + i or Ctrl + o to go back and forth between poiter
