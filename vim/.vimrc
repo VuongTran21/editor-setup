@@ -10,6 +10,9 @@ set backspace=indent,eol,start
 
 set number
 
+" Disable bell sound!!!!
+set noerrorbells visualbell t_vb=
+
 " Search all text in lower case
 set ignorecase
 
@@ -27,6 +30,10 @@ set guioptions-=l
 set guioptions-=L
 set guioptions-=r
 set guioptions-=R
+
+" Hide gvim menu
+set guioptions-=m
+set guioptions-=T
 
 " Disable GUI tabs
 set guioptions-=e
@@ -85,7 +92,16 @@ nmap <C-b> :NERDTreeToggle<cr>
 nmap <Leader>f :tag<space>
 
 " Close all buffers
-nmap <Leader>w :bufdo bd!<cr>
+nmap <Leader>ww :bufdo bd!<cr>
+
+" Close single tab
+nmap <Leader>w :tabc<cr>
+
+" Paste from system clipboard
+nmap <Leader>v "+p
+
+" Copy to system clipboard
+vmap <Leader>c "+y
 
 "---------------Search---------------"
 set hlsearch
@@ -97,6 +113,23 @@ augroup autosourcing
     autocmd!
     autocmd BufWritePost .vimrc source %
 augroup END
+
+" For vim-php-namespace plugin
+" Import namespace
+function! IPhpInsertUse()
+    call PhpInsertUse()
+    call feedkeys('a',  'n')
+endfunction
+autocmd FileType php inoremap <Leader>n <Esc>:call IPhpInsertUse()<CR>
+autocmd FileType php noremap <Leader>n :call PhpInsertUse()<CR>
+
+" Import full namespace
+function! IPhpExpandClass()
+    call PhpExpandClass()
+    call feedkeys('a', 'n')
+endfunction
+autocmd FileType php inoremap <Leader>nf <Esc>:call IPhpExpandClass()<CR>
+autocmd FileType php noremap <Leader>nf :call PhpExpandClass()<CR>
 
 " Notes and tips
 " - zz to instantly center line
