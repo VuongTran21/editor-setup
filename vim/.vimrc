@@ -10,6 +10,8 @@ set backspace=indent,eol,start
 
 set number
 
+set relativenumber
+
 " Disable bell sound!!!!
 set noerrorbells visualbell t_vb=
 
@@ -34,7 +36,11 @@ set shiftwidth=4
 let mapleader=','
 
 "---------------Visuals---------------"
-colorscheme atom-dark-256
+
+colorscheme gruvbox
+
+set bg=dark
+
 " Force terminal use color 256
 set t_CO=256
 
@@ -74,6 +80,7 @@ nmap <C-L> <C-W><C-L>
 let g:ctrlp_custom_ignore = 'node_modules'
 let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
 
+"/ cTags
 " List method in class
 nmap <C-r> :CtrlPBufTag<cr>
 
@@ -82,6 +89,8 @@ nmap <C-e> :CtrlPMRUFiles<cr>
 
 "/ NERDTree
 let NERDTreeHijackNetrw=0
+" Show hidden files
+let g:ctrlp_show_hidden = 1
 
 "/ Greplace.vim
 " Use Ag.vim for search
@@ -97,11 +106,11 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 "/ vim-php-cs-fixer.vim
-let g:php_cs_fixer_path="/home/vuongtran/.config/composer/vendor/bin/php-cs-fixer"
-let g:php_cs_fixer_config_file = "/home/vuongtran/.phpcsfixer"
+let g:php_cs_fixer_path=$HOME ."/.config/composer/vendor/bin/php-cs-fixer"
+let g:php_cs_fixer_config_file =$HOME ."/.phpcsfixer"
 let g:php_cs_fixer_rules = "@PSR2"
 let g:php_cs_fixer_php_path = "/usr/bin/php"
-nnoremap <slient><Leader>pf :call PhpCsFixerFixFile()<cr>
+nnoremap <silent><Leader>pf :call PhpCsFixerFixFile()<cr>
 
 "---------------Mappings---------------"
 
@@ -165,3 +174,6 @@ autocmd FileType php noremap <Leader>nf :call PhpExpandClass()<CR>
 " - Ctrl + w + = to equally split screen
 " - :sbuffer <buffer-index>: open buffer in spit window
 " - Ctrl + i or Ctrl + o to go back and forth between poiter
+" - Ctrl + n, default autocompletion for vim -> related to complete setting
+" ,n -> import namespace php
+" ,nf -> import full namespace
