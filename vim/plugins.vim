@@ -22,6 +22,12 @@ Plugin 'stephpy/vim-php-cs-fixer'
 Plugin 'SirVer/ultisnips'
 Plugin 'tobyS/vmustache'
 Plugin 'tobyS/pdv'
+Plugin 'rainglow/vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'neoclide/coc.nvim'
+Plugin 'tpope/vim-commentary'
+Plugin 'morhetz/gruvbox'
+Plugin 'tpope/vim-eunuch'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
