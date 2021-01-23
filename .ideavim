@@ -7,8 +7,12 @@ set clipboard+=unnamed
 set smartcase
 set ignorecase
 set showmatch
+set noerrorbells
+set ideajoin
+set surround
+set multiple-cursors
 
-
+set noerrorbells visualbell t_vb=
 
 
 
