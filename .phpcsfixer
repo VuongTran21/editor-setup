@@ -15,9 +15,5 @@ return PhpCsFixer\Config::create()
 				'try'
 			]
 		],
-		'array_indentation' => true,
-		'binary_operator_spaces' => [
-			'default' => 'align',
-			'operators' => ['=>' => 'align']
-		]
+		'array_indentation' => true
 	]);
