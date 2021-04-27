@@ -84,6 +84,8 @@ let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
 " List method in class
 nmap <C-r> :CtrlPBufTag<cr>
 
+let g:snipMate = { 'snippet_version' : 1 }
+
 " Most recently used files
 nmap <C-e> :CtrlPMRUFiles<cr>
 
