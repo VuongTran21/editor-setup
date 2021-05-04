@@ -1,0 +1,12 @@
+install ubuntu from scratch:
+
+1. install git
+sudo apt install git
+
+2. install composer
+sudo apt install curl php-cli php-mbstring git unzip php7.4-curl php-mbstring php-xml php7.4-mysql
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-18-04
+
+3. install valet
+sudo apt install network-manager libnss3-tools jq xsel
+composer global require cpriego/valet-linux
